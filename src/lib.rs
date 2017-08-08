@@ -248,10 +248,12 @@ impl Value {
 }
 
 mod connection;
+mod shared_connection;
 mod cursor;
 mod statement;
 
 pub use connection::Connection;
+pub use shared_connection::SharedConnection;
 pub use cursor::Cursor;
 pub use statement::{Statement, State, Bindable, Readable};
 
